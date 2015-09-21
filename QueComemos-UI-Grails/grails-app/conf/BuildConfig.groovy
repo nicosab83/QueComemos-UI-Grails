@@ -41,6 +41,7 @@ grails.project.dependency.resolution = {
         grailsCentral()
         mavenCentral()
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
+		mavenRepo "http://repo.maven.apache.org/maven2/"    // punto 1
         //mavenRepo "http://repository.codehaus.org"
         //mavenRepo "http://download.java.net/maven/2/"
         //mavenRepo "http://repository.jboss.com/maven2/"
@@ -49,6 +50,8 @@ grails.project.dependency.resolution = {
     }
 
 	dependencies {
+		build 'org.eclipse.xtend:org.eclipse.xtend.lib:2.7.3'  // punto 2
+		build 'org.eclipse.xtend:org.eclipse.xtend.standalone:2.7.3'
 		build 'org.eclipse.xtend:org.eclipse.xtend.lib:2.6.1'
 		build "org.uqbar-project:uqbar-domain:3.4-SNAPSHOT"
 	}
